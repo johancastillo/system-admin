@@ -1,10 +1,15 @@
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Home from './pages/Home';
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
-  );
+    <Router>
+      
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
+    </Router>
+  )
 }
 
 export default App;
