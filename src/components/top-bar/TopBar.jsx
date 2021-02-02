@@ -1,7 +1,8 @@
 import avatar from './avatar.jpg'
+import logo from './logo.svg'
 import { useEffect } from "react"
 
-
+import {Link} from 'react-router-dom'
 
 const TopBar = () => {
     useEffect(() => {
@@ -33,28 +34,18 @@ const TopBar = () => {
                     <i className="fas fa-bars"></i>
                 </button>
 
-                <a href="#" className="logo">
-                    <i className="fas fa-play"></i>
-                    <span>System Admin</span>
-                </a>
+                <Link to="/">
+                <div className="d-flex justify-content-center align-items-center">
+                   <img width={"40px"} src={logo} alt=""/> 
+                    <span className="mx-1">System Admin</span>
+                </div>
+                </Link>
+
             </div>
 
-            <div className="barra-busqueda">
-                <input type="text" placeholder="Buscar" />
-
-                <button type="submit">
-                    <i className="fas fa-search"></i>
-                </button>
-            </div>
+            
 
             <div className="botones-header">
-                <button>
-                    <i className="fas fa-upload"></i>
-                </button>
-
-                <button>
-                    <i className="fas fa-th"></i>
-                </button>
 
                 <button>
                     <i className="fas fa-bell"></i>

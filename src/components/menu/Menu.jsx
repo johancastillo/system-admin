@@ -1,56 +1,58 @@
-
+import { Link } from 'react-router-dom'
 
 const Menu = () => {
     return (
         <nav className="menu-lateral">
-            <a href="#" className="active">
+            <Link to="/" className="active">
                 <i className="fas fa-home"></i>
-                Página Principal
-            </a>
+                    Página Principal
+            </Link>
 
-            <a href="#">
-                <i className="fas fa-fire"></i>
-                Tendencias
-            </a>
 
-            <a href="#">
-                <i className="fas fa-star"></i>
-                Suscripciones
-            </a>
+            <Link to="/proveedores">
 
-            <hr />
+                <i class="fas fa-box-open"></i>
+                Proveedores
+            </Link>
 
-            <a href="#">
-                <i className="fas fa-folder"></i>
-                HTML y CSS
-            </a>
-
-            <a href="#">
-                <i className="fas fa-folder"></i>
-                Responsive Design
-            </a>
-
-            <a href="#">
-                <i className="fas fa-folder"></i>
-                Bootstrap
-            </a>
+            <Link to="/clientes">
+                <i class="fas fa-users"></i>
+                Clientes
+            </Link>
 
             <hr />
 
-            <a href="#">
+            <Link to="/">
+                <i class="fas fa-hand-holding-usd"></i>
+                Pagos
+            </Link>
+
+            <Link to="/">
+                <i class="fas fa-coins"></i>
+                Deudas
+            </Link>
+
+            <Link to="/">
+                <i class="fas fa-credit-card"></i>
+                Banco
+            </Link>
+
+            <hr />
+
+            <Link to="/">
                 <i className="fas fa-folder"></i>
                 Javascript
-            </a>
+            </Link>
 
-            <a href="#">
+            <Link to="/">
                 <i className="fas fa-folder"></i>
                 React
-            </a>
+            </Link>
 
-            <a href="#">
+            <Link to="/">
                 <i className="fas fa-folder"></i>
-                PHP y MYSQL
-            </a>
+                Archivos
+            </Link>
         </nav>
 
     )

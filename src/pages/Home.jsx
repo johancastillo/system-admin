@@ -5,7 +5,10 @@ const Home = () => {
 
     return (
         <main className="main">
-            <h3 className="titulo">Videos Recomendados</h3>
+            <h3 className="titulo">
+                Bienvenido
+            </h3>
+
             <div className="grid-videos">
                 <a href="#" className="video">
                     <img src="https://via.placeholder.com/500x281?text=Placeholder" alt="" />
