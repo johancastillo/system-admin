@@ -1,4 +1,5 @@
 import ProviderCard from "../../components/provider-card/ProviderCard"
+import Table from "../../components/table/Table"
 
 const ProviderProfile = () => {
     return (
@@ -14,10 +15,25 @@ const ProviderProfile = () => {
                         description="Desarrollador de Software"
                     />
 
+                    <br/>
+                    <br/>
+
+                    <div className="card p-4">
+                        <div>
+                            <h6>Información</h6>
+                        </div>
+
+                        <hr/>
+
+                        <div>
+                            <h6>Historial</h6>
+                        </div>
+                    </div>
+
                 </div>
 
                 <div className="col-md-8">
-
+                    <Table />
                 </div>
             </div>
         </div>

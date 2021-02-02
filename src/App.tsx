@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import Menu from './components/menu/Menu';
 import TopBar from './components/top-bar/TopBar';
@@ -8,6 +9,15 @@ import ProviderProfile from './pages/provider-profile/ProviderProfile';
 import Providers from './pages/providers/Providers';
 
 const App = () => {
+  useEffect(() => {
+    window.addEventListener('keydown', e => {
+      if(e.ctrlKey === true && e.key == 'a'){
+        e.preventDefault()
+        window.location.href = 'localhost:3000/proveedores'
+      }
+    })
+  }, [])
+
   return (
     <Router>
       <div className="contenedor active" id="contenedor">
