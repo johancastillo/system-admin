@@ -4,7 +4,7 @@ const ProviderCard = ({ name, id, lastname, image, type, description }) => {
     
     return (
         <Link href={`/proveedor/${id}`}>
-            <div className="card" style={{ width: '100%' }}>
+            <div className="card" style={{ width: '100%', cursor: 'pointer' }}>
                 <img src={image} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title text-center">

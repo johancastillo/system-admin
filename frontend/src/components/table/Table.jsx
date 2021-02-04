@@ -2,7 +2,7 @@
 
 const Table = () => {
     return (
-        <table className="table">
+        <table className="table mt-4">
             <thead>
                 <tr>
                     <th scope="col">#</th>
