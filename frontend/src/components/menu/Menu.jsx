@@ -1,55 +1,55 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'wouter'
 
 const Menu = () => {
     return (
         <nav className="menu-lateral">
-            <Link to="/" className="active">
+            <Link href="/" className="active">
                 <i className="fas fa-home"></i>
                     Página Principal
             </Link>
 
 
-            <Link to="/proveedores">
+            <Link href="/proveedores">
 
                 <i class="fas fa-box-open"></i>
                 Proveedores
             </Link>
 
-            <Link to="/clientes">
+            <Link href="/clientes">
                 <i class="fas fa-users"></i>
                 Clientes
             </Link>
 
             <hr />
 
-            <Link to="/">
+            <Link href="/">
                 <i class="fas fa-hand-holding-usd"></i>
                 Pagos
             </Link>
 
-            <Link to="/">
+            <Link href="/">
                 <i class="fas fa-coins"></i>
                 Deudas
             </Link>
 
-            <Link to="/">
+            <Link href="/">
                 <i class="fas fa-credit-card"></i>
                 Banco
             </Link>
 
             <hr />
 
-            <Link to="/">
+            <Link href="/">
                 <i className="fas fa-folder"></i>
                 Javascript
             </Link>
 
-            <Link to="/">
+            <Link href="/">
                 <i className="fas fa-folder"></i>
                 React
             </Link>
 
-            <Link to="/">
+            <Link href="/">
                 <i className="fas fa-folder"></i>
                 Archivos
             </Link>

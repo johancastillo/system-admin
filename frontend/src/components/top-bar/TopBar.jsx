@@ -2,7 +2,7 @@ import avatar from './avatar.jpg'
 import logo from './logo.svg'
 import { useEffect } from "react"
 
-import {Link} from 'react-router-dom'
+import {Link} from 'wouter'
 
 const TopBar = () => {
     useEffect(() => {

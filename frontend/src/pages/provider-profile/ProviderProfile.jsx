@@ -1,18 +1,34 @@
+import { useEffect, useState } from "react"
 import ProviderCard from "../../components/provider-card/ProviderCard"
 import Table from "../../components/table/Table"
+import axios from 'axios'
 
-const ProviderProfile = () => {
+
+const ProviderProfile = (props) => {
+    const [provider, setProvider] = useState({})
+
+
+    useEffect(() => {
+        axios.get(`http://172.20.43.106:8080/api/directorios/${props.params.id}`)
+        .then(
+            response => setProvider(response.data)
+        )
+        .catch(
+            err => console.log(err)
+        )
+    }, [])
+
     return (
         <div className="p-4">
             <div className="row">
                 <div className="col-md-4">
+                    
                     <ProviderCard
-                        prividerId={1}
-                        name="Johan"
-                        lastname="Castillo"
+                        id={provider.id}
+                        name={provider.nombre}
                         type="Especial"
-                        image="http://digital-education.herokuapp.com/static/media/8.74de9726.png"
-                        description="Desarrollador de Software"
+                        image={`http://172.20.43.106:8080/fotografias/${provider.foto}`}
+                        description={provider.direccion}
                     />
 
                     <br/>

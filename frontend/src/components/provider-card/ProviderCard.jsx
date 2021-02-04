@@ -1,13 +1,14 @@
-import { Link } from 'react-router-dom'
+import { Link } from 'wouter'
 
-const ProviderCard = ({ name, lastname, image, type, description }: any) => {
+const ProviderCard = ({ name, id, lastname, image, type, description }) => {
+    
     return (
-        <Link to="/proveedor">
+        <Link href={`/proveedor/${id}`}>
             <div className="card" style={{ width: '100%' }}>
                 <img src={image} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title text-center">
-                        {`${name} ${lastname}`}
+                        {`${name}`}
                     </h5>
 
                     <div className="text-center">
