@@ -19,16 +19,20 @@ const ProviderProfile = (props) => {
             )
     }, [])
 
+
+
     return (
         <div className="p-4">
             <div className="row">
                 <div className="col-md-4">
 
+
+
                     <ProviderCard
                         id={provider.id}
                         name={provider.nombre}
                         type="Especial"
-                        image={`http://172.20.43.106:8080/fotografias/${provider.foto}`}
+                        image={provider.foto}
                         description={provider.direccion}
                     />
 
@@ -52,13 +56,13 @@ const ProviderProfile = (props) => {
                 <div className="col-md-8">
 
                     <div className="container">
-                    <Link href={`/editar-proveedor/${props.params.id}`}>
-                        <a type="button" class="btn btn-info">Editar</a>
-                    </Link>
+                        <Link href={`/editar-proveedor/${props.params.id}`}>
+                            <a type="button" class="btn btn-info">Editar</a>
+                        </Link>
 
-                    <Link href={`/eliminar-proveedor/${props.params.id}`}>
-                        <a type="button" class="btn btn-danger mx-2">Eliminar</a>
-                    </Link>
+                        <Link href={`/eliminar-proveedor/${props.params.id}`}>
+                            <a type="button" class="btn btn-danger mx-2">Eliminar</a>
+                        </Link>
                     </div>
 
                     <Table />

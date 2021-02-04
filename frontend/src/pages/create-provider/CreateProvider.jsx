@@ -28,11 +28,15 @@ const CreateProvider = () => {
         let data = {
             "nombre": name,
             "telefono": phone,
-            "direccion": direction,
-            "foto": photo
+            "direccion": direction
         }
 
-        axios.post(url, data)
+        axios({
+            method: 'post',
+            url,
+            data
+          })
+          
         .then(
             response => console.log(response)
         )
