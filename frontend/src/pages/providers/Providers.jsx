@@ -37,8 +37,8 @@ const Providers = () => {
                     providers.map(
                         provider => {
                             let routeImg = provider.foto
-                            routeImg.replace(/\//g, "/")
-                            routeImg = routeImg.split(",")
+                            routeImg = routeImg ? routeImg.replace(/\//g, "/") : ""
+                            routeImg = routeImg ? routeImg.split(",") : ""
 
                             return (
                                 <ProviderCard

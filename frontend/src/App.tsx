@@ -4,7 +4,6 @@ import { Route, Switch } from 'wouter'
 import Menu from './components/menu/Menu'
 import TopBar from './components/top-bar/TopBar'
 import Clients from './pages/clients/Clients'
-import DeleteProvider from './pages/delete-provider/DeleteProvider'
 import EditProvider from './pages/edit-provider/EditProvider'
 import Home from './pages/Home'
 import PageNotFound from './pages/page-not-found/PageNotFound'
@@ -37,7 +36,6 @@ const App = () => {
           <Route path="/proveedores" component={Providers} />
           <Route path="/proveedor/:id" component={ProviderProfile} />
           <Route path="/editar-proveedor/:id" component={EditProvider} />
-          <Route path="/eliminar-proveedor/:id" component={DeleteProvider} />
           <Route path="/crear-proveedor" component={CreateProvider} />
           <Route path="/clientes" component={Clients} />
           <Route component={PageNotFound} />
