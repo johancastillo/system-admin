@@ -11,7 +11,7 @@ const ProviderProfile = (props) => {
     const [location, setLocation] = useLocation()
 
     useEffect(() => {
-        axios.get(`http://172.20.43.106:8080/api/directorios/${props.params.id}`)
+        axios.get(`http://localhost:3004/providers/${props.params.id}`)
             .then(
                 response => setProvider(response.data)
             )
@@ -62,32 +62,22 @@ const ProviderProfile = (props) => {
 
                     <ProviderCard
                         id={provider.id}
-                        name={provider.nombre}
-                        type="Especial"
-                        image={provider.foto}
-                        description={provider.direccion}
+                        name={`${provider.name} ${provider.lastname}`}
+                        type={provider.type}
+                        image={provider.image}
+                        description={provider.addres}
                     />
 
                     <br />
                     <br />
 
-                    <div className="card p-4">
-                        <div>
-                            <h6>Información</h6>
-                        </div>
 
-                        <hr />
-
-                        <div>
-                            <h6>Historial</h6>
-                        </div>
-                    </div>
 
                 </div>
 
                 <div className="col-md-8">
 
-                    <div className="container">
+                    <div className="container d-flex justify-content-end">
                         <Link href={`/editar-proveedor/${props.params.id}`}>
                             <a type="button" class="btn btn-info">Editar</a>
                         </Link>
@@ -99,7 +89,49 @@ const ProviderProfile = (props) => {
 
                     </div>
 
-                    <Table />
+                    <div className="container mt-4">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+                                    Información
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                    Historial
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                                    Gráficos
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div className="card p-4 mt-4">
+                                    <div>
+                                        <h6>Información</h6>
+                                    </div>
+
+                                    <hr />
+
+                                    <div>
+                                        <h6>Historial</h6>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <Table />
+                            </div>
+
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                Graphics
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

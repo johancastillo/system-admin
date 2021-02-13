@@ -1,3 +1,4 @@
+import { Link } from "wouter"
 
 
 const Home = () => {
@@ -10,9 +11,14 @@ const Home = () => {
             </h3>
 
             <div className="grid-videos">
-                <a href="#" className="video">
-                    <img src="https://via.placeholder.com/500x281?text=Placeholder" alt="" />
-                </a>
+                <Link href="/proveedores">
+                    <div className="card d-flex justify-content-center align-items-center"
+                        style={{ cursor: 'pointer' }}>
+                            
+                        <h5>Ctrl + A</h5>
+                        <p>Ir a proveedores</p>
+                    </div>
+                </Link>
 
                 <a href="#" className="video">
                     <img src="https://via.placeholder.com/500x281?text=Placeholder" alt="" />

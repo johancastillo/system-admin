@@ -1,6 +1,6 @@
 import { Link } from 'wouter'
 
-const ProviderCard = ({ name, id, lastname, image, type, description }) => {
+const ProviderCard = ({ name, id, lastname, image, type, service, description }) => {
     
     return (
         <Link href={`/proveedor/${id}`}>
@@ -10,6 +10,10 @@ const ProviderCard = ({ name, id, lastname, image, type, description }) => {
                     <h5 className="card-title text-center">
                         {`${name}`}
                     </h5>
+
+                    <p className="text-center">
+                        {service ? service : ""}
+                    </p>
 
                     <div className="text-center">
                         <span className="badge bg-danger">
