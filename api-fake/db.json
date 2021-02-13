@@ -1,0 +1,16 @@
+{
+    "providers": [
+        {
+            "id": 1,
+            "name": "",
+            "lastname": "",
+            "rif": "",
+            "service": "",
+            "email": "",
+            "phone": "",
+            "type": "",
+            "address": "",
+            "registration_date": ""
+        }
+    ]
+}
