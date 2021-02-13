@@ -6,14 +6,14 @@ import { Link, useLocation } from "wouter"
 
 import Swal from 'sweetalert2'
 
-const ProviderProfile = (props) => {
-    const [provider, setProvider] = useState({})
+const ProviderProfile = ({params}) => {
+    const [provider, setProvider] = useState([])
     const [location, setLocation] = useLocation()
 
     useEffect(() => {
-        axios.get(`http://localhost:3004/providers/${props.params.id}`)
+        axios.get(`http://localhost:3004/providers?rif=${params.rif}`)
             .then(
-                response => setProvider(response.data)
+                response => setProvider(response.data[0])
             )
             .catch(
                 err => console.log(err)
@@ -32,7 +32,7 @@ const ProviderProfile = (props) => {
 
         }).then((result) => {
             if (result.value) {
-                axios.delete(`http://172.20.43.106:8080/api/directorios/${props.params.id}`)
+                axios.delete(`http://172.20.43.106:8080/api/directorios?rif=${params.id}`)
                     .then(
                         response => setLocation("/proveedores")
                     )
@@ -60,9 +60,10 @@ const ProviderProfile = (props) => {
 
 
 
-                    <ProviderCard
+                <ProviderCard
                         id={provider.id}
-                        name={`${provider.name} ${provider.lastname}`}
+                        name={provider.name}
+                        lastname={provider.lastname}
                         type={provider.type}
                         image={provider.image}
                         description={provider.addres}
@@ -78,7 +79,7 @@ const ProviderProfile = (props) => {
                 <div className="col-md-8">
 
                     <div className="container d-flex justify-content-end">
-                        <Link href={`/editar-proveedor/${props.params.id}`}>
+                        <Link href={`/editar-proveedor/${params.id}`}>
                             <a type="button" class="btn btn-info">Editar</a>
                         </Link>
 

@@ -27,7 +27,7 @@ const Providers = () => {
             <h3 className="text-center mt-4">Proveedores</h3>
 
 
-            <div className="m-2 d-flex justify-content-between">
+            <div className="container px-4 d-flex justify-content-between">
                 <input type="text" style={{ width: '210px' }} className="form-control" placeholder="Buscar por nombre..." />
 
 
@@ -51,9 +51,9 @@ const Providers = () => {
                         {
                             providers.map(provider => {
                                 return (
-                                    <Link href={`/proveedor/${provider.id}`}>
+                                    <Link href={`/proveedores/${provider.rif}`}>
                                         <tr>
-                                            <th scope="row">{provider.rif}</th>
+                                            <th scope="row">{`V-${provider.rif}`}</th>
                                             <td>{`${provider.name} ${provider.lastname}`}</td>
                                             <td>{provider.service}</td>
                                             <td>{provider.phone}</td>
@@ -83,8 +83,9 @@ const Providers = () => {
                             return (
                                 <ProviderCard
                                     key={provider.id}
-                                    id={provider.id}
-                                    name={`${provider.name} ${provider.lastname}`}
+                                    rif={provider.rif}
+                                    name={provider.name}
+                                    lastname={provider.lastname}
                                     type={provider.type}
                                     service={provider.service}
                                     image={image}

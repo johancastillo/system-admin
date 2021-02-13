@@ -1,14 +1,14 @@
 import { Link } from 'wouter'
 
-const ProviderCard = ({ name, id, lastname, image, type, service, description }) => {
+const ProviderCard = ({ name, id, rif, lastname, image, type, service, description }) => {
     
     return (
-        <Link href={`/proveedor/${id}`}>
+        <Link href={`/proveedores/${rif}`}>
             <div className="card" style={{ width: '100%', cursor: 'pointer' }}>
                 <img src={image} className="card-img-top" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title text-center">
-                        {`${name}`}
+                        {`${name} ${lastname}`}
                     </h5>
 
                     <p className="text-center">
