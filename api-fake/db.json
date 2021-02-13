@@ -2,7 +2,7 @@
     "providers": [
         {
             "id": 1,
-            "fullname": "johan castillo",
+            "fullname": "Johan Castillo",
             "rif": "283334241",
             "image": "https://johancastillo.github.io/education360-images/images/categories/business.jpg",
             "service": "Desarrollo de Software",
@@ -14,7 +14,7 @@
         },
         {
             "id": 2,
-            "fullname": "yariana ramos",
+            "fullname": "Yariana Ramos",
             "rif": "273334241",
             "image": "https://johancastillo.github.io/education360-images/images/categories/dibujo.png",
             "service": "Diseño Gráfico",
@@ -26,7 +26,7 @@
         },
         {
             "id": 3,
-            "fullname": "darwin bandri",
+            "fullname": "Darwin Bandri",
             "rif": "263334241",
             "image": "https://johancastillo.github.io/education360-images/images/categories/fisica.png",
             "service": "Desarrollo de Software",
@@ -38,7 +38,7 @@
         },
         {
             "id": 4,
-            "fullname": "darwin bandri",
+            "fullname": "Darwin Bandri",
             "rif": "253334241",
             "image": "https://johancastillo.github.io/education360-images/images/categories/fisica.png",
             "service": "Desarrollo de Software",

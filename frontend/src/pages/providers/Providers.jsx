@@ -69,9 +69,15 @@ const Providers = () => {
                     onChange={filterName} />
 
 
-                <Link href="/crear-proveedor">
-                    <a className="btn btn-primary">Crear</a>
-                </Link>
+                <div>
+                    <Link href="/crear-proveedor">
+                        <a className="btn btn-primary mx-2">+ Nuevo</a>
+                    </Link>
+
+                    <a className="btn btn-primary">
+                        Filtrar
+                    </a>
+                </div>
             </div>
 
             <div className="container px-4 mt-4">

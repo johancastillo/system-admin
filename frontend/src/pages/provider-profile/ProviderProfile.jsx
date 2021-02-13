@@ -62,8 +62,7 @@ const ProviderProfile = ({params}) => {
 
                 <ProviderCard
                         id={provider.id}
-                        name={provider.name}
-                        lastname={provider.lastname}
+                        fullname={provider.fullname}
                         type={provider.type}
                         image={provider.image}
                         description={provider.addres}
