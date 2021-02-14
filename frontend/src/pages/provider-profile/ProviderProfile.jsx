@@ -78,7 +78,7 @@ const ProviderProfile = ({params}) => {
                 <div className="col-md-8">
 
                     <div className="container d-flex justify-content-end">
-                        <Link href={`/editar-proveedor/${params.id}`}>
+                        <Link href={`/editar-proveedor/${provider.id}`}>
                             <a type="button" class="btn btn-info">Editar</a>
                         </Link>
 

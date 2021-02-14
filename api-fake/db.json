@@ -1,59 +1,61 @@
 {
-    "providers": [
-        {
-            "id": 1,
-            "fullname": "Johan Castillo",
-            "rif": "283334241",
-            "image": "https://johancastillo.github.io/education360-images/images/categories/business.jpg",
-            "service": "Desarrollo de Software",
-            "email": "jcjohan2707@gmail.com",
-            "phone": "04242183299",
-            "type": "Ordinario",
-            "address": "Caracas, Petare",
-            "registration_date": "13-02-2021"
-        },
-        {
-            "id": 2,
-            "fullname": "Yariana Ramos",
-            "rif": "273334241",
-            "image": "https://johancastillo.github.io/education360-images/images/categories/dibujo.png",
-            "service": "Diseño Gráfico",
-            "email": "jcjohan2707@gmail.com",
-            "phone": "04242183299",
-            "type": "Ordinario",
-            "address": "Caracas, Plaza Venezuela",
-            "registration_date": "13-02-2021"
-        },
-        {
-            "id": 3,
-            "fullname": "Darwin Bandri",
-            "rif": "263334241",
-            "image": "https://johancastillo.github.io/education360-images/images/categories/fisica.png",
-            "service": "Desarrollo de Software",
-            "email": "jcjohan2707@gmail.com",
-            "phone": "04242183299",
-            "type": "Ordinario",
-            "address": "Caracas, Petare",
-            "registration_date": "13-02-2021"
-        },
-        {
-            "id": 4,
-            "fullname": "Darwin Bandri",
-            "rif": "253334241",
-            "image": "https://johancastillo.github.io/education360-images/images/categories/fisica.png",
-            "service": "Desarrollo de Software",
-            "email": "jcjohan2707@gmail.com",
-            "phone": "04242183299",
-            "type": "Ordinario",
-            "address": "Caracas, Petare",
-            "registration_date": "13-02-2021"
-        }
-    ],
-    "clients": [
-        {
-            "id": 1,
-            "name": "Darwin",
-            "lastname": "Bandri"
-        }
-    ]
+  "providers": [
+    {
+      "id": 1,
+      "fullname": "Johan Castillo",
+      "rif": "283334241",
+      "type": "especial",
+      "registration_date": "13-02-2021",
+      "service": "Desarrollo de Software",
+      "email": "jcjohan2707@gmail.com",
+      "address": "Caracas, Petare",
+      "phone": "04242183299",
+      "photo": {},
+      "image": "https://johancastillo.github.io/education360-images/images/categories/business.jpg"
+    },
+    {
+      "id": 2,
+      "fullname": "Yariana Ramos",
+      "rif": "273334241",
+      "type": "ordinario",
+      "registration_date": "13-02-2021",
+      "service": "Diseño Gráfico",
+      "email": "yarii@gmail.com",
+      "address": "Caracas, Plaza Venezuela",
+      "phone": "04242183299",
+      "photo": {},
+      "image": "https://johancastillo.github.io/education360-images/images/categories/dibujo.png"
+    },
+    {
+      "id": 3,
+      "fullname": "Darwin Bandri",
+      "rif": "263334241",
+      "image": "https://johancastillo.github.io/education360-images/images/categories/fisica.png",
+      "service": "Desarrollo de Software",
+      "email": "jcjohan2707@gmail.com",
+      "phone": "04242183299",
+      "type": "Ordinario",
+      "address": "Caracas, Petare",
+      "registration_date": "13-02-2021"
+    },
+    {
+      "id": 4,
+      "fullname": "Darwin Bandri 2",
+      "rif": "253334241",
+      "image": "https://johancastillo.github.io/education360-images/images/categories/fisica.png",
+      "service": "Desarrollo de Software",
+      "email": "jcjohan2707@gmail.com",
+      "phone": "04242183299",
+      "type": "Ordinario",
+      "address": "Caracas, Petare",
+      "registration_date": "13-02-2021"
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "name": "Darwin",
+      "lastname": "Bandri"
+    }
+  ]
 }

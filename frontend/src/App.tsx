@@ -35,7 +35,7 @@ const App = () => {
           <Route path="/" component={Home} />
           <Route path="/proveedores" component={Providers} />
           <Route path="/proveedores/:rif" component={ProviderProfile} />
-          <Route path="/editar-proveedor/:rif" component={EditProvider} />
+          <Route path="/editar-proveedor/:id" component={EditProvider} />
           <Route path="/crear-proveedor" component={CreateProvider} />
           <Route path="/clientes" component={Clients} />
           <Route component={PageNotFound} />
