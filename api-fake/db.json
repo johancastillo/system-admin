@@ -97,11 +97,75 @@
     }
   ],
   "historical": [
-      {"type": "Pago", "value": "+20", "date": "14-02-2021", "description": "Servicio"},
-      {"type": "Pago", "value": "+50", "date": "14-02-2021", "description": "Servicio"},
-      {"type": "Deuda", "value": "-50", "date": "14-02-2021", "description": "Servicio"},
-      {"type": "Deuda", "value": "-70", "date": "14-02-2021", "description": "Servicio"},
-      {"type": "Pago", "value": "+50", "date": "14-02-2021", "description": "Servicio"},
-      {"type": "Deuda", "value": "-250", "date": "14-02-2021", "description": "Servicio"}
+    {
+      "id": 1,
+      "type": "Pago",
+      "value": "+20",
+      "date": "14-02-2021",
+      "description": "Servicio"
+    },
+    {
+      "id": 2,
+      "type": "Pago",
+      "value": "+50",
+      "date": "14-02-2021",
+      "description": "Servicio"
+    },
+    {
+      "id": 3,
+      "type": "Deuda",
+      "value": "-50",
+      "date": "14-02-2021",
+      "description": "Servicio"
+    },
+    {
+      "id": 4,
+      "type": "Deuda",
+      "value": "-70",
+      "date": "14-02-2021",
+      "description": "Servicio"
+    },
+    {
+      "id": 5,
+      "type": "Pago",
+      "value": "+50",
+      "date": "14-02-2021",
+      "description": "Servicio"
+    },
+    {
+      "id": 6,
+      "type": "Deuda",
+      "value": "-250",
+      "date": "14-02-2021",
+      "description": "Servicio"
+    },
+    {
+      "id": 7,
+      "type": "Pago",
+      "value": "+150",
+      "date": "15-02-2021",
+      "description": "Servicio"
+    },
+    {
+      "id": 8,
+      "type": "Deuda",
+      "date": "27-07-2021",
+      "description": "Mi cumpleaños",
+      "value": "-100"
+    },
+    {
+      "id": 9,
+      "type": "Pago",
+      "date": "28-05-2021",
+      "description": "Holaa",
+      "value": "+50"
+    },
+    {
+      "id": 10,
+      "type": "Pago",
+      "date": "hoy",
+      "description": "Holaaa",
+      "value": "+100"
+    }
   ]
 }
