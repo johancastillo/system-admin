@@ -81,7 +81,7 @@ const Providers = () => {
             </div>
 
             <div className="container px-4 mt-4">
-                <table class="table table-striped table-hover">
+                <table className="table table-striped table-hover">
                     <thead className="table-dark">
                         <tr>
                             <th scope="col">Rif</th>
@@ -96,7 +96,7 @@ const Providers = () => {
                             providers.map(provider => {
                                 return (
                                     <Link href={`/proveedores/${provider.rif}`}>
-                                        <tr>
+                                        <tr style={{cursor: 'pointer'}}>
                                             <th scope="row">{`V-${provider.rif}`}</th>
                                             <td className="text-capitalize">
                                                 {`${provider.fullname}`}
@@ -112,6 +112,42 @@ const Providers = () => {
                     </tbody>
                 </table>
 
+            </div>
+
+            <div className="container px-4 mt-4">
+                <nav aria-label="Page navigation example">
+                    <ul className="pagination">
+                        <li className="page-item">
+                            <a className="page-link">
+                                Anterior
+                            </a>
+                        </li>
+                        
+                        <li className="page-item">
+                            <a className="page-link">
+                                1
+                            </a>
+                        </li>
+
+                        <li className="page-item">
+                            <a className="page-link">
+                                2
+                            </a>
+                        </li>
+                        
+                        <li className="page-item">
+                            <a className="page-link">
+                                3
+                            </a>
+                        </li>
+
+                        <li className="page-item">
+                            <a className="page-link">
+                                Siguiente
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
 
             <br />

@@ -16,15 +16,23 @@ import CreateProvider from './pages/create-provider/CreateProvider';
 const App = () => {
   const [location, setLocation] = useLocation();
 
+  // Keywords shotcut
   useEffect(() => {
     window.addEventListener('keydown', e => {
       if (e.ctrlKey === true && e.key == 'a') {
         e.preventDefault()
         setLocation("/proveedores")
+      }else if(e.ctrlKey === true && e.key == 'q'){
+        e.preventDefault()
+        setLocation("/")
+      }else if(e.ctrlKey === true && e.key == 'm'){
+        e.preventDefault()
+        setLocation("/clientes")
       }
     })
   }, [])
 
+  // Render view
   return (
     <>
       <div className="contenedor" id="contenedor">

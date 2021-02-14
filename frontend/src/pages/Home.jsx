@@ -11,58 +11,34 @@ const Home = () => {
             </h3>
 
             <div className="grid-videos">
-                <Link href="/proveedores">
+                <Link href="/">
                     <div className="card d-flex justify-content-center align-items-center"
-                        style={{ cursor: 'pointer' }}>
-                            
-                        <h5>Ctrl + A</h5>
-                        <p>Ir a proveedores</p>
+                        style={{ cursor: 'pointer', height: '174px' }}>
+
+                        <h5>Ctrl + Q</h5>
+                        <strong className="m-0">Inicio</strong>
                     </div>
                 </Link>
 
-                <a href="#" className="video">
-                    <img src="https://via.placeholder.com/500x281?text=Placeholder" alt="" />
-                </a>
+                <Link href="/proveedores">
+                    <div className="card d-flex justify-content-center align-items-center"
+                        style={{ cursor: 'pointer', height: '174px' }}>
+                            
+                        <h5>Ctrl + A</h5>
+                        <strong className="m-0">Proveedores</strong>
+                    </div>
+                </Link>
 
-                <a href="#" className="video">
-                    <img src="https://via.placeholder.com/500x281?text=Placeholder" alt="" />
-                </a>
+                <Link href="/clientes">
+                    <div className="card d-flex justify-content-center align-items-center"
+                        style={{ cursor: 'pointer', height: '174px' }}>
+                            
+                        <h5>Ctrl + M</h5>
+                        <strong className="m-0">Clientes</strong>
+                    </div>
+                </Link>
 
-                <a href="#" className="video">
-                    <img src="https://via.placeholder.com/500x281?text=Placeholder" alt="" />
-                </a>
-
-                <a href="#" className="video">
-                    <img src="https://via.placeholder.com/500x281?text=Placeholder" alt="" />
-                </a>
-
-                <a href="#" className="video">
-                    <img src="https://via.placeholder.com/500x281?text=Placeholder" alt="" />
-                </a>
-
-                <a href="#" className="video">
-                    <img src="https://via.placeholder.com/500x281?text=Placeholder" alt="" />
-                </a>
-
-                <a href="#" className="video">
-                    <img src="https://via.placeholder.com/500x281?text=Placeholder" alt="" />
-                </a>
-
-                <a href="#" className="video">
-                    <img src="https://via.placeholder.com/500x281?text=Placeholder" alt="" />
-                </a>
-
-                <a href="#" className="video">
-                    <img src="https://via.placeholder.com/500x281?text=Placeholder" alt="" />
-                </a>
-
-                <a href="#" className="video">
-                    <img src="https://via.placeholder.com/500x281?text=Placeholder" alt="" />
-                </a>
-
-                <a href="#" className="video">
-                    <img src="https://via.placeholder.com/500x281?text=Placeholder" alt="" />
-                </a>
+                
             </div>
         </main>
 

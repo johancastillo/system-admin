@@ -17,7 +17,7 @@
       "id": 2,
       "fullname": "Yariana Ramos",
       "rif": "273334241",
-      "type": "ordinario",
+      "type": "Ordinario",
       "registration_date": "13-02-2021",
       "service": "Diseño Gráfico",
       "email": "yarii@gmail.com",
@@ -75,6 +75,19 @@
       "phone": "54521200",
       "photo": {},
       "image": "https://johancastillo.github.io/education360-images/images/categories/kids.png"
+    },
+    {
+      "id": 7,
+      "fullname": "Juana Pérez",
+      "rif": "455893",
+      "type": "Especial",
+      "registration_date": "",
+      "service": "Contabilidad",
+      "email": "ella@gmail.com",
+      "address": "Caracas",
+      "phone": "04141559833",
+      "photo": {},
+      "image": "https://johancastillo.github.io/education360-images/images/categories/literatura.png"
     }
   ],
   "clients": [
