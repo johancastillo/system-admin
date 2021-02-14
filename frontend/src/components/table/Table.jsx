@@ -1,24 +1,7 @@
-import { useEffect, useState } from 'react'
-import axios from 'axios'
 
-const Table = ({ id }) => {
-    const [historical, setHistorical] = useState([])
-    let total = 0
+const Table = ({ historical, total }) => {
 
-    useEffect(() => {
-        axios.get(`http://localhost:3004/historical/${id}`)
-            .then(
-                response => setHistorical(response.data.registers)
-            )
-            .catch(
-                err => console.log(err)
-            )
-    }, [])
-
-    useEffect(() => {
-        historical.map(register => total += parseFloat(register.value))
-    }, [historical])
-
+    
     return (
         <>
 

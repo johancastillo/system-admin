@@ -8,17 +8,40 @@ import Swal from 'sweetalert2'
 
 const ProviderProfile = ({params}) => {
     const [provider, setProvider] = useState([])
+    const [historical, setHistorical] = useState([])
+    let [total, setTotal] = useState(0)
+
+
     const [location, setLocation] = useLocation()
 
     useEffect(() => {
         axios.get(`http://localhost:3004/providers?rif=${params.rif}`)
             .then(
-                response => setProvider(response.data[0])
+                response => {
+                    setProvider(response.data[0])
+                }
             )
             .catch(
                 err => console.log(err)
             )
     }, [])
+
+    useEffect(() => {
+        axios.get(`http://localhost:3004/historical/${provider.id}`)
+            .then(
+                response => setHistorical(response.data.registers)
+            )
+            .catch(
+                err => console.log(err)
+            )
+    }, [provider])
+
+    useEffect(() => {
+        let total = 0
+        historical.forEach( register => total += parseFloat(register.value))
+        
+        setTotal(total)
+    }, [historical])
 
 
     const handleDelete = () => {
@@ -123,7 +146,7 @@ const ProviderProfile = ({params}) => {
                             </div>
 
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                <Table id={1} />
+                                <Table historical={historical} total={total} />
                             </div>
 
                             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
