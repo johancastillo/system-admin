@@ -27,9 +27,10 @@ const ProviderProfile = ({params}) => {
     }, [])
 
     useEffect(() => {
-        axios.get(`http://localhost:3004/historical/${provider.id}`)
+        let urDinamicl = `http://localhost:3004/historical/${provider.id}` 
+        axios.get(`http://localhost:3004/historical`)
             .then(
-                response => setHistorical(response.data.registers)
+                response => setHistorical(response.data)
             )
             .catch(
                 err => console.log(err)

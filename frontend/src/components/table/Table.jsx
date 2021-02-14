@@ -1,10 +1,23 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const Table = ({ historical, total }) => {
-    const [typeRegister, setTypeRegister] = useState('')
+    const [type, setType] = useState('')
     const [date, setDate] = useState('')
     const [description, setDescription] = useState('')
     const [value, setValue] = useState('')
+
+    let deuda, pago
+
+    useEffect(() => {
+        pago = document.getElementsByName("type")[0]
+        deuda = document.getElementsByName("type")[1]
+    })
+
+    const handleType = () => {
+        console.log("Pago", pago.checked)
+        console.log("Deuda", deuda.checked)
+
+    }
 
     return (
         <>
@@ -22,11 +35,12 @@ const Table = ({ historical, total }) => {
                             <input type="text" placeholder="Monto" className="form-control my-2" />
 
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" value="deuda" type="radio" name="type" />
+                                <input class="form-check-input" value="pago" type="radio" name="type" checked />
                                 <label class="form-check-label" for="inlineRadio1">
                                     Pago
                                 </label>
                             </div>
+
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" value="deuda" type="radio" name="type" />
                                 <label class="form-check-label" for="inlineRadio2">
@@ -36,7 +50,10 @@ const Table = ({ historical, total }) => {
                                                     </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            
+                            <button type="button" class="btn btn-primary" onClick={handleType}>
+                                Save changes
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -44,7 +61,7 @@ const Table = ({ historical, total }) => {
             {/* End Modal */}
 
             <div className="container d-flex justify-content-between mt-4 px-2">
-                <button className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button className="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Nuevo registro
                </button>
 
