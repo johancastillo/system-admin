@@ -166,6 +166,27 @@
       "date": "hoy",
       "description": "Holaaa",
       "value": "+100"
+    },
+    {
+      "id": 11,
+      "type": "Pago",
+      "date": "14-02-2021",
+      "description": "adadad",
+      "value": "+200"
+    },
+    {
+      "id": 12,
+      "type": "Pago",
+      "date": "27-89ada",
+      "description": "asdasda",
+      "value": "+200"
+    },
+    {
+      "id": 13,
+      "type": "Pago",
+      "date": "mañana",
+      "description": "fesdfsdf",
+      "value": "+400"
     }
   ]
 }

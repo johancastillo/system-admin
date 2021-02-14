@@ -226,7 +226,7 @@ const ProviderProfile = ({ params }) => {
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
 
-                                                <button type="button" class="btn btn-primary" onClick={handleSend}>
+                                                <button type="button" class="btn btn-primary" onClick={handleSend} data-bs-dismiss="modal" aria-label="Close">
                                                     Save changes
                                                 </button>
                                             </div>
