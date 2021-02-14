@@ -146,6 +146,7 @@ const ProviderProfile = ({params}) => {
                             </div>
 
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                
                                 <Table historical={historical} total={total} />
                             </div>
 
