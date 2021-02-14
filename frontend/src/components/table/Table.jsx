@@ -1,36 +1,68 @@
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 
+const Table = ({ id }) => {
+    const [historical, setHistorical] = useState([])
+    let total = 0
 
-const Table = () => {
+    useEffect(() => {
+        axios.get(`http://localhost:3004/historical/${id}`)
+            .then(
+                response => setHistorical(response.data.registers)
+            )
+            .catch(
+                err => console.log(err)
+            )
+    }, [])
+
+    useEffect(() => {
+        historical.map(register => total += parseFloat(register.value))
+    }, [historical])
+
     return (
-        <table className="table mt-4">
-            <thead>
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>@twitter</td>
-                </tr>
-            </tbody>
-        </table>
+        <>
+
+            <div className="container d-flex justify-content-end mt-4 px-2">
+                <p>
+                    Deuda:
+            <strong className="mx-2"
+                        style={Math.sign(total) >= 0 ? { color: "green" } : { color: "red" }}>
+                        {total}
+
+                    </strong>
+                </p>
+            </div>
+
+            <table className="table mt-2">
+                <thead>
+                    <tr>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Monto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        historical.map(register => {
+                            return (
+                                <tr>
+                                    <th scope="row">{register.date}</th>
+                                    <td>{register.description}</td>
+                                    <td className=""
+                                        style={Math.sign(register.value) === 1 ? { color: "green" } : { color: "red" }}>
+                                        {register.value}
+                                    </td>
+                                </tr>
+                            )
+                        })
+                    }
+
+                </tbody>
+            </table>
+
+
+
+        </>
     )
 }
 

@@ -123,7 +123,7 @@ const ProviderProfile = ({params}) => {
                             </div>
 
                             <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                <Table />
+                                <Table id={1} />
                             </div>
 
                             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">

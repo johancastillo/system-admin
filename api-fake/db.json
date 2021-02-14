@@ -93,8 +93,86 @@
   "clients": [
     {
       "id": 1,
-      "name": "Darwin",
-      "lastname": "Bandri"
+      "name": "Darwin"
+    }
+  ],
+  "historical": [
+    {
+      "id": 1,
+      "registers": [
+        {"type": "Pago", "value": "+20", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Pago", "value": "+50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-70", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Pago", "value": "+50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-250", "date": "14-02-2021", "description": "Servicio"}
+      ]
+    },
+    {
+      "id": 2,
+      "registers": [
+        {"type": "Pago", "value": "+120", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Pago", "value": "+250", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-20", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Pago", "value": "+150", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-450", "date": "14-02-2021", "description": "Servicio"}
+      ]
+    },
+    {
+      "id": 3,
+      "registers": [
+        {"type": "Pago", "value": "+20", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Pago", "value": "+50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-70", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Pago", "value": "+50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-250", "date": "14-02-2021", "description": "Servicio"}
+      ]
+    },
+    {
+      "id": 4,
+      "registers": [
+        {"type": "Pago", "value": "+20", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Pago", "value": "+50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-70", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Pago", "value": "+50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-250", "date": "14-02-2021", "description": "Servicio"}
+      ]
+    },
+    {
+      "id": 5,
+      "registers": [
+        {"type": "Pago", "value": "+20", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Pago", "value": "+50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-70", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Pago", "value": "+50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-250", "date": "14-02-2021", "description": "Servicio"}
+      ]
+    },
+    {
+      "id": 6,
+      "registers": [
+        {"type": "Pago", "value": "+20", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Pago", "value": "+50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-70", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Pago", "value": "+50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-250", "date": "14-02-2021", "description": "Servicio"}
+      ]
+    },
+    {
+      "id": 7,
+      "registers": [
+        {"type": "Pago", "value": "+20", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Pago", "value": "+50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-70", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Pago", "value": "+50", "date": "14-02-2021", "description": "Servicio"},
+        {"type": "Deuda", "value": "-250", "date": "14-02-2021", "description": "Servicio"}
+      ]
     }
   ]
 }
