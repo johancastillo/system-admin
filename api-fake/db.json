@@ -4,9 +4,9 @@
       "id": 1,
       "fullname": "Johan Castillo",
       "rif": "283334241",
-      "type": "especial",
+      "type": "Ordinario",
       "registration_date": "13-02-2021",
-      "service": "Desarrollo de Software",
+      "service": "Desarrollo de Software Full-Stack",
       "email": "jcjohan2707@gmail.com",
       "address": "Caracas, Petare",
       "phone": "04242183299",
@@ -49,6 +49,32 @@
       "type": "Ordinario",
       "address": "Caracas, Petare",
       "registration_date": "13-02-2021"
+    },
+    {
+      "id": 5,
+      "fullname": "Andrea Guerra",
+      "rif": "32504601",
+      "type": "Ordinario",
+      "registration_date": "",
+      "service": "Comer",
+      "email": "andreajguerra_11@hotmail.com",
+      "address": "Caracas",
+      "phone": "2555555",
+      "photo": {},
+      "image": "https://johancastillo.github.io/education360-images/images/categories/marketing.jpg"
+    },
+    {
+      "id": 6,
+      "fullname": "Forlan",
+      "rif": "234234",
+      "type": "Ordinario",
+      "registration_date": "",
+      "service": "Gafo",
+      "email": "forlan@gmail.com",
+      "address": "Petare",
+      "phone": "54521200",
+      "photo": {},
+      "image": "https://johancastillo.github.io/education360-images/images/categories/kids.png"
     }
   ],
   "clients": [
