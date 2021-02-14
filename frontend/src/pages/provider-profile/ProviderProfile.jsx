@@ -32,7 +32,7 @@ const ProviderProfile = ({params}) => {
 
         }).then((result) => {
             if (result.value) {
-                axios.delete(`http://172.20.43.106:8080/api/directorios?rif=${params.id}`)
+                axios.delete(`http://localhost:3004/providers/${provider.id}`)
                     .then(
                         response => setLocation("/proveedores")
                     )

@@ -16,7 +16,7 @@ const TopBar = () => {
             if (window.innerWidth <= 768) {
                 contenedor.classList.remove('active');
             } else {
-                contenedor.classList.add('active');
+                contenedor.classList.remove('active');
             }
         }
 

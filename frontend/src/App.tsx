@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <>
-      <div className="contenedor active" id="contenedor">
+      <div className="contenedor" id="contenedor">
         <TopBar />
         <Menu />
 
