@@ -51,8 +51,10 @@ const TopBar = () => {
                     <i className="fas fa-bell"></i>
                 </button>
 
-                <a href="#" className="avatar">
-                    <img src={avatar} alt="" />
+                <a className="avatar">
+                    <div>
+                        JC
+                    </div>
                 </a>
             </div>
         </header>

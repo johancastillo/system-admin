@@ -156,6 +156,16 @@ a {
 	border-radius: 100px;
 }
 
+.header .botones-header .avatar div{
+	background: cornflowerblue;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* ---- ---- ---- Menu Lateral ---- ---- ---- */
 
 .menu-lateral {

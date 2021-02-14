@@ -1,23 +1,36 @@
+import { useState } from 'react'
 import { Link } from 'wouter'
 
 const Menu = () => {
+    const [page, setPage] = useState('home')
+
+    const homePage = () => setPage('home')
+    const providerPage = () => setPage('provider')
+    const clientPage = () => setPage('client')
+
     return (
         <nav className="menu-lateral">
-            <Link href="/" className="active">
-                <i className="fas fa-home"></i>
+
+            <Link href="/" onClick={homePage}>
+                <a className={page === 'home' ? 'active' : ""}>
+                    <i className="fas fa-home"></i>
                     Página Principal
+                </a>
             </Link>
 
 
-            <Link href="/proveedores">
-
-                <i class="fas fa-box-open"></i>
+            <Link href="/proveedores" onClick={providerPage}>
+                <a className={page === 'provider' ? 'active' : ""}>
+                    <i class="fas fa-box-open"></i>
                 Proveedores
+                </a>
             </Link>
 
-            <Link href="/clientes">
+            <Link href="/clientes" onClick={clientPage}>
+                <a className={page === 'client' ? 'active' : ""}>
                 <i class="fas fa-users"></i>
                 Clientes
+                </a>
             </Link>
 
             <hr />

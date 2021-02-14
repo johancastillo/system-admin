@@ -37,8 +37,8 @@ const ProviderProfile = ({params}) => {
                         response => setLocation("/proveedores")
                     )
                 Swal.fire(
-                    'Deleted!',
-                    'Your imaginary file has been deleted.',
+                    '¡Eliminado!',
+                    'Se ha eliminado correctamente',
                     'success'
                 )
                 // For more information about handling dismissals please visit
